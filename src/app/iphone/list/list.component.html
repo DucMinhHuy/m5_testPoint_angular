@@ -1,0 +1,21 @@
+<p>list works!</p>
+
+<h1>ds san pham</h1>
+<a routerLink="/product/creat">create</a>
+<table>
+  <tr>
+    <td>stt</td>
+    <td>title</td>
+    <td>price</td>
+    <td>description</td>
+  </tr>
+  <tr *ngFor="let products of product; index as i">
+    <td>{{i+1}}</td>
+    <td>{{products.title}}</td>
+    <td>{{products.price}}</td>
+    <td>{{products.description}}</td>
+    <td><a [routerLink]="['/edit',products.id]">edit</a></td>
+    <td><a [routerLink]="['/delete',products.id]">delete</a></td>
+    <td></td>
+  </tr>
+</table>

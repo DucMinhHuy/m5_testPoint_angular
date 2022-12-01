@@ -1,0 +1,26 @@
+
+<h1>create</h1>
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>ma san pham :</td>
+      <td><input type="number" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>name :</td>
+      <td><input type="text" formControlName="title" placeholder="title"></td>
+    </tr>
+    <tr>
+      <td>price :</td>
+      <td><input type="text" formControlName="price" placeholder="price"></td>
+    </tr>
+    <tr>
+      <td>dis</td>
+      <td><input type="text" formControlName="description" placeholder="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>create</button></td>
+    </tr>
+  </table>
+</form>

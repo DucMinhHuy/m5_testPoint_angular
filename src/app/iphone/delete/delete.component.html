@@ -1,0 +1,14 @@
+<p>delete works!</p>
+<form [formGroup]="productForm" (ngSubmit)="deleteProduct(id)">
+  <table>
+    <tr>
+      <td>tên danh mục :</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xoá</button></td>
+    </tr>
+  </table>
+</form>
+<p>delete works!</p>
